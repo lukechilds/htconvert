@@ -1,6 +1,6 @@
 {
   "name": "htconvert",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert .htaccess redirects to nginx.conf redirects",
   "main": "dist/htconvert.js",
   "bin": {
