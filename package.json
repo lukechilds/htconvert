@@ -54,6 +54,7 @@
     "babel-cli": "^6.9.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
+    "child-process-promise": "^2.0.2",
     "coveralls": "^2.11.9",
     "eslint": "^2.11.1",
     "eslint-config-lukechilds": "^1.5.1",
