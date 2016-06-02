@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Convert .htaccess redirects to nginx.conf redirects",
   "main": "dist/htconvert.js",
+  "bin": {
+    "htconvert": "dist/cli.js"
+  },
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "babel -d dist src",
@@ -45,5 +48,8 @@
     "babel-preset-es2015": "^6.9.0",
     "eslint": "^2.11.1",
     "eslint-config-lukechilds": "^1.5.1"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
   }
 }
