@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "babel -d dist src",
+    "lint": "eslint src",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },
@@ -16,6 +17,9 @@
     "plugins": [
       "add-module-exports"
     ]
+  },
+  "eslintConfig": {
+    "extends": "lukechilds"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,8 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.9.0"
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-lukechilds": "^1.5.1"
   }
 }
