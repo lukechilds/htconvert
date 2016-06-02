@@ -23,11 +23,7 @@ Redirect 301 /admin/ https://website.com/?login=true
 
 ```shell
 $ cat .htaccess | htconvert > nginxRedirects.conf
-```
-
-or
-
-```shell
+# or
 $ htconvert -f .htaccess > nginxRedirects.conf
 ```
 
