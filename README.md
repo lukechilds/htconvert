@@ -60,7 +60,7 @@ $ htconvert --help
 
 ### Node
 
-If you want to you can also use this as a node module
+This is also usable as a node module
 
 ```shell
 npm install --save htconvert
