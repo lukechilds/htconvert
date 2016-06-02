@@ -50,6 +50,8 @@
     "eslint-config-lukechilds": "^1.5.1"
   },
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "fs-promise": "^0.5.0",
+    "get-stdin": "^5.0.1"
   }
 }
