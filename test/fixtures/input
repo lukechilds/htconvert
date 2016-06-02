@@ -1,0 +1,13 @@
+# Frontend Redirects
+
+Redirect 301 /deleted-page/ https://website.com/new-page/
+Redirect 302 /new-feature/ https://website.com/coming-soon/
+
+# Admin Redirects
+
+Redirect 301 /admin/ https://website.com/?login=true
+
+# Test alignment
+
+Redirect 301 /old-short-url/          https://website.com/new-short-url/
+Redirect 301 /old-loooooooooong-url/  https://website.com/new-long-url/

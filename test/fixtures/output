@@ -1,0 +1,23 @@
+# Frontend Redirects
+
+location /deleted-page/ {
+  return 301 https://website.com/new-page/;
+}
+location /new-feature/ {
+  return 302 https://website.com/coming-soon/;
+}
+
+# Admin Redirects
+
+location /admin/ {
+  return 301 https://website.com/?login=true;
+}
+
+# Test alignment
+
+location /old-short-url/ {
+  return 301 https://website.com/new-short-url/;
+}
+location /old-loooooooooong-url/ {
+  return 301 https://website.com/new-long-url/;
+}
