@@ -10,6 +10,12 @@ npm install --global htconvert
 
 ## Usage
 
+```shell
+$ cat .htaccess | htconvert > nginxRedirects.conf
+# or
+$ htconvert -f .htaccess > nginxRedirects.conf
+```
+
 `.htaccess`
 
 ```apacheconf
@@ -19,12 +25,6 @@ Redirect 302 /new-feature/ https://website.com/coming-soon/
 
 # Admin Redirects
 Redirect 301 /admin/ https://website.com/?login=true
-```
-
-```shell
-$ cat .htaccess | htconvert > nginxRedirects.conf
-# or
-$ htconvert -f .htaccess > nginxRedirects.conf
 ```
 
 `nginxRedirects.conf`
