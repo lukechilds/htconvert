@@ -14,11 +14,5 @@ program
 const readHtaccess = program.file ? readFile(program.file, 'utf-8') : getStdin();
 
 readHtaccess
-  .then(htaccess => {
-    if(!htaccess) {
-      program.outputHelp();
-    }
-
-    return htconvert(htaccess);
-  })
+  .then(htaccess => htaccess ? htconvert(htaccess) : program.help())
   .then(console.log);
