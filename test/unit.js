@@ -33,3 +33,13 @@ test('cli input from stdin', t => {
     t.is(result.stdout, output+'\n\n');
   });
 });
+
+// If this worked that would be awesome
+test.skip('cli should show help if stdin and file input are empty', t => {
+  const commands = [];
+  commands.push(exec('node ../dist/cli.js'));
+  commands.push(exec('node ../dist/cli.js --help'));
+  return Promise.all(commands).then((results) => {
+    t.is(results[0].stdout, results[1].stdout);
+  });
+});
