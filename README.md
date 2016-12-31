@@ -1,6 +1,8 @@
-# htconvert [![Build Status](https://travis-ci.org/lukechilds/htconvert.svg?branch=master)](https://travis-ci.org/lukechilds/htconvert) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/htconvert/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/htconvert?branch=master)
+# htconvert
 
 > Convert .htaccess redirects to nginx.conf redirects.
+
+[![Build Status](https://travis-ci.org/lukechilds/htconvert.svg?branch=master)](https://travis-ci.org/lukechilds/htconvert) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/htconvert/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/htconvert?branch=master)
 
 ## Install
 
