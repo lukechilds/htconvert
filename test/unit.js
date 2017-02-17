@@ -34,11 +34,15 @@ test('cli input from stdin', t => {
   });
 });
 
-// If this worked that would be awesome
-test.skip('cli should show help if stdin and file input are empty', t => {
+test('cli should show help if stdin and file input are empty', t => {
   const commands = [];
   commands.push(exec('node ../dist/cli.js'));
   commands.push(exec('node ../dist/cli.js --help'));
+
+  // We ned to manually stop listening on stdin
+  // This happens automatically when ran from terminal
+  commands[0].childProcess.stdin.end();
+
   return Promise.all(commands).then((results) => {
     t.is(results[0].stdout, results[1].stdout);
   });
