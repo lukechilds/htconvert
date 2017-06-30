@@ -1,7 +1,5 @@
 # htconvert
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lukechilds/htconvert.svg)](https://greenkeeper.io/)
-
 > Convert .htaccess redirects to nginx.conf redirects.
 
 [![Build Status](https://travis-ci.org/lukechilds/htconvert.svg?branch=master)](https://travis-ci.org/lukechilds/htconvert)
