@@ -4,9 +4,9 @@ import { readFileSync } from 'fs';
 import { exec } from 'child-process-promise';
 import htconvert from '../dist/htconvert';
 
-const inputPath = './fixtures/input';
+const inputPath = './test/fixtures/input';
 const input = readFileSync(inputPath, 'utf-8');
-const output = readFileSync('./fixtures/output', 'utf-8');
+const output = readFileSync('./test/fixtures/output', 'utf-8');
 
 test('htconvert should export a function', t => {
   t.is(typeof htconvert, 'function');
@@ -17,27 +17,27 @@ test('htconvert should match input with output', t => {
 });
 
 test('cli input with -f arg', t => {
-  return exec(`node ../dist/cli.js -f ${inputPath}`).then(result => {
+  return exec(`node dist/cli.js -f ${inputPath}`).then(result => {
     t.is(result.stdout, output+'\n');
   });
 });
 
 test('cli input with --file arg', t => {
-  return exec(`node ../dist/cli.js --file ${inputPath}`).then(result => {
+  return exec(`node dist/cli.js --file ${inputPath}`).then(result => {
     t.is(result.stdout, output+'\n');
   });
 });
 
 test('cli input from stdin', t => {
-  return exec(`echo "${input}" | node ../dist/cli.js`).then(result => {
+  return exec(`echo "${input}" | node dist/cli.js`).then(result => {
     t.is(result.stdout, output+'\n\n');
   });
 });
 
 test('cli should show help if stdin and file input are empty', t => {
   const commands = [];
-  commands.push(exec('node ../dist/cli.js'));
-  commands.push(exec('node ../dist/cli.js --help'));
+  commands.push(exec('node dist/cli.js'));
+  commands.push(exec('node dist/cli.js --help'));
 
   // We ned to manually stop listening on stdin
   // This happens automatically when ran from terminal
