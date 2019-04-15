@@ -63,6 +63,6 @@
   "dependencies": {
     "commander": "^2.9.0",
     "fs-promise": "^2.0.3",
-    "get-stdin": "^5.0.1"
+    "get-stdin": "^7.0.0"
   }
 }
