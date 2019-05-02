@@ -58,7 +58,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^4.2.0",
     "eslint-config-lukechilds": "^1.5.1",
-    "nyc": "^11.0.2"
+    "nyc": "^14.1.0"
   },
   "dependencies": {
     "commander": "^2.9.0",
