@@ -61,7 +61,7 @@
     "nyc": "^11.0.2"
   },
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^3.0.0",
     "fs-promise": "^2.0.3",
     "get-stdin": "^5.0.1"
   }
